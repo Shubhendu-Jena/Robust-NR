@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">GeoTransfer: Generalizable Few-Shot Multi-View Reconstruction via Transfer Learning</h1>
+            <h1 class="title is-1 publication-title">Toward Robust Neural Reconstruction from Sparse Point Sets</h1>
             <div class="is-size-3 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -146,7 +146,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            This paper presents a novel approach for sparse 3D reconstruction by leveraging the expressive power of Neural Radiance Fields (NeRFs) and fast transfer of their features to learn accurate occupancy fields. Existing 3D reconstruction methods from sparse inputs still struggle with capturing intricate geometric details and can suffer from limitations in handling occluded regions. On the other hand, NeRFs excel in modeling complex scenes but do not offer means to extract meaningful geometry. Our proposed method offers the best of both worlds by transferring the information encoded in NeRF features to derive an accurate occupancy field representation. We utilize a pre-trained, generalizable state-of-the-art NeRF network to capture detailed scene radiance information, and rapidly transfer this knowledge to train a generalizable implicit occupancy network. This process helps in leveraging the knowledge of the scene geometry encoded in the generalizable NeRF prior and refining it to learn occupancy fields, facilitating a more precise generalizable representation of 3D space. The transfer learning approach leads to a dramatic reduction in training time, by orders of magnitude (i.e. from several days to 3.5 hrs), obviating the need to train generalizable sparse surface reconstruction methods from scratch. Additionally, we introduce a novel loss on volumetric rendering weights that helps in the learning of accurate occupancy fields, along with a normal loss that helps in global smoothing of the occupancy fields. We evaluate our approach on the DTU dataset and demonstrate state-of-the-art performance in terms of reconstruction accuracy, especially in challenging scenarios with sparse input data and occluded regions. We furthermore demonstrate the generalization capabilities of our method by showing qualitative results on the Blended MVS dataset without any retraining.
+            We consider the challenging problem of  learning Signed Distance Functions (SDF) from sparse and noisy 3D point clouds. In contrast to recent methods that depend on smoothness priors, our method, rooted in a distributionally robust optimization (DRO) framework, incorporates a regularization term that leverages samples from the uncertainty regions of the model to improve the learned SDFs. Thanks to tractable dual formulations, we show that this framework enables a stable and efficient optimization of SDFs in the absence of ground truth supervision. Using a  variety of synthetic and real data evaluations from different modalities we show  that of our DRO based learning framework can improve   SDF learning with respect to baselines and the state-of-the-art methods.
           </p>
         </div>
       </div>
